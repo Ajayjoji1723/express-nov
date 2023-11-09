@@ -39,6 +39,11 @@ app.get("/greeting", (req,res)=>{
     res.send("Hello World!");
 });
 
+//date api
+app.get("/date-time", async(req,res)=>{
+    res.send(`The Date Time is ${new Date()}`)
+})
+
 //add BOOK API or Create Book
 app.post("/add-book", async(req,res)=>{
     const {
