@@ -1,0 +1,54 @@
+GET http://localhost:3001/greeting
+
+###
+
+GET http://localhost:3001/date-time 
+
+
+
+###
+
+POST http://localhost:3001/add-book 
+Content-Type: application/json 
+
+{
+    "id":6,
+    "title":"Devara",
+    "authorId":5,
+    "rating": 6,
+    "ratingCount":14520,
+    "reviewCount":32500,
+    "description":"Good to Read the book",
+    "pages":10,
+    "dateOfPublication":"2024-04-05",
+    "editionLanguage":"Telugu",
+    "price":10500,
+    "onlineStores":"Amazon"
+
+}
+
+###
+GET http://localhost:3001/books
+
+
+###
+GET http://localhost:3001/book/2
+
+
+###
+
+PUT http://localhost:3001/update-book/2
+Content-Type: application/json 
+
+{
+    "title":"Bahubali The Begening"
+
+};
+
+###
+DELETE  http://localhost:3001/delete-book/3 
+
+###
+GET http://localhost:3001/filter-books?&limit=2&order=ASC&order_by=price&search_q=potter
+
+###
